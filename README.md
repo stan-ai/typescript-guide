@@ -9,10 +9,12 @@ A repo in progress, soon available with all the basic guidance and contents to c
 -   index.html (The HTML which loads app.js from script)
 -   [data-types](/data-types/)
     -   [Core-Datatypes](/data-types/core-datatypes.ts)
-    -   [Obj-Datatypes]("data-types/obj-arr-enum.ts")
-    -   [Function-Datatypes]("data-types/function-types.ts")
-    -   [Union-Literal-Datatypes]("data-types/union-literal-alias.ts")
-    -   [Unknown-Never-Datatypes]("data-types/union-never.ts")
+    -   [Obj-Datatypes](/data-types/obj-arr-enum.ts)
+    -   [Function-Datatypes](/data-types/function-types.ts)
+    -   [Union-Literal-Datatypes](/data-types/union-literal-alias.ts)
+    -   [Unknown-Never-Datatypes](/data-types/union-never.ts)
+-   js-only.js (Sample JS)
+-   using0ts.ts (Sample TS)
 
 ```
 const devQuote = 'Developers are never far from a new "Hello World!"';
