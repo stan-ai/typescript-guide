@@ -12,7 +12,7 @@ A repo in progress, soon available with all the basic guidance and contents to c
     -   [Obj-Datatypes](/data-types/obj-arr-enum.ts)
     -   [Function-Datatypes](/data-types/function-types.ts)
     -   [Union-Literal-Datatypes](/data-types/union-literal-alias.ts)
-    -   [Unknown-Never-Datatypes](/data-types/union-never.ts)
+    -   [Unknown-Never-Datatypes](/data-types/unknown-never.ts)
 -   js-only.js (Sample JS)
 -   using0ts.ts (Sample TS)
 
