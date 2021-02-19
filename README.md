@@ -1,6 +1,6 @@
 # TypeScript Guide
 
-A repo in progress, soon available with all the basic guidance and contents to code TypeScript. This repo is highly insipired from the Udemy Course [`Understanding TypeScript - 2021 Edition`](https://www.udemy.com/course/understanding-typescript/) by [`Maximilian Schwarzmüller`](https://www.udemy.com/user/maximilian-schwarzmuller/). This Repo is made as my own practice during this course.
+A repo in progress, soon available with all the basic guidance and contents to code TypeScript. This repo is highly insipired from the Udemy Course [Understanding TypeScript - 2021 Edition](https://www.udemy.com/course/understanding-typescript/) by [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/). This Repo is made as my own practice during this course.
 
 ## Structure
 
