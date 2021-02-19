@@ -26,7 +26,7 @@ or
 tsc filename.ts -w
 ```
 
-2. If you are working on a bit project and you'll have multiple files and you need the compiler to have a constant look on all the files, then you need to initialize a TypeScript project in the root folder of your project, it will create a `tsconfig.json` file which will point to all the .ts files from the root folder to any number of sub-folders thereafter. And then you can run the tsc command without pointing it to any file with --watch option, so on ctrl+s it can recompile all the .ts files to js.
+2. If you are working on a big project and you have multiple files and you need the compiler to have a constant look on all the files, then you need to initialize a TypeScript project in the root folder of your project, it will create a `tsconfig.json` file which will point to all the .ts files from the root folder to any number of sub-folders thereafter. And then you can run the tsc command without pointing it to any file with --watch option, so on ctrl+s it can recompile all the .ts files to js.
 
 ```
 tsc --init // On the root folder to creare tsconfig.json
@@ -35,6 +35,45 @@ tsc --watch
 or
 tsc -w
 ```
+
+## Understanding tsconfig.json
+
+tsconfig.json is the file created when we initialize a TypeScript project and it can be used to view all the `.ts` files in the project. But there might be cases where we want to exclude some files and don't want to compile or only include some files. In tscongif.json we can do the following to achieve that.
+
+```
+tsconfig.json
+-------------
+
+{
+    "compilerOptions": {
+        ...
+    },
+    "exclude": [
+        "./data-types",
+        ... [any other TypeScript Directories]
+        "./node_modules",
+        "./using-ts.ts"
+    ]
+}
+```
+
+This is what is done in this project to make sure that the directories only has `.ts` files and is not recreating `.js` every time you edit something. Alternatively we can also do something like:
+
+```
+tsconfig.json
+-------------
+
+{
+    "compilerOptions": {
+        ...
+    },
+    "include": [
+        "app.ts"
+    ]
+}
+```
+
+which will only recompile app.ts and no other file. Exclude has been done in this project to make a smooth and easy project setup so, if you want to use the project by cloning or even by forking it in your organization for reference on basics, you can easily just code in `app.ts` and it will only create `app.js` which is already added in index.html < script > tag and you can go deeper in the directories for conceptual references.
 
 ```
 const devQuote = 'Developers are never far from a new "Hello World!"';
