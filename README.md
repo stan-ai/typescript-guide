@@ -1,6 +1,6 @@
 # TypeScript Guide
 
-A repo in progress, soon available with all the basic guidance and contents to code TypeScript
+A repo in progress, soon available with all the basic guidance and contents to code TypeScript. This repo is highly insipired from the Udemy Course [`Understanding TypeScript - 2021 Edition`](https://www.udemy.com/course/understanding-typescript/) by [`Maximilian Schwarzmüller`](https://www.udemy.com/user/maximilian-schwarzmuller/). This Repo is made as my own practice during this course.
 
 ## Structure
 
@@ -85,8 +85,38 @@ tsconfig.js
 
 {
     "compilerOptions":{
-        "target": "es5" // Can be set to multiple versions of js like 'es6', 'es3', etc. The older the version, the more browser compatibility.
+        "target": "es5"             // Can be set to multiple versions of js like 'es6', 'es3', etc. The older the version, the more browser compatibility.
+        "lib": [
+            "dom",
+            "es5",
+            "dom.iterable",
+            "scripthost"
+        ]                           // By default it is commented out, but commented out has defaults added, the basis js functionalities. Although you can add specific libraries as done above. These 4 are the exact libraries that you get if it is commented and added by default.
+        "allowJs": true             // Compiles JS files as well
+        "checkJS": true             // Doesn't compile but still checks and reports errors in js files (like syntax)
+        "jsx": "preserve"           // Could be set to preserve/react/react-native. Is helpful when working with TypeScript in React projects
+        "sourceMap": true           // If set to true we get the .ts option in Browser Dev Tools like console and sources and we can debug the code from the browser itself i.e. put breakpoints in .ts files, etc
+        "outDir": "./"              // Specifies the location where you want to place the compiled js files. Makes the project organized.
+        "rootDir": "./"             // Specifies the root folder for all the .ts files i.e. src (commonly). Makes the project organized.
+        "removeComments": true      // Removes the comments after compilation of .ts files and no comments are added in .js files
+        "noEmit": true              // If you only want to check the .ts error reports and not generate .js files. Fast for devlopment process.
+        "downlevelIteration": true  // Provided iterative support for very old compability browsers/versions, hence if you have loops and are facing some issue after compiling, you may want to think about turning this option on.
 
+        /* IMP and not menioned in the tsconfig.json by default */
+        "noEmitOnError": true       // If you set it to true, then it won't create .js files if there are any errors in .ts files, which is super helpful
+
+        /* Strict Type-Checking Options */
+        "strict": true              // By default makes all the below options true, so if you need to enable only certain options, make this false.
+        "noImplicitsAny": true      // Checks that you have to be clear on the TYPE of a parameters/function etc.
+        "strictNullChecks": true    // It checks for strict Nulls, something has to have a value/element. For variables that might be null.
+        "strictFunctionTypes": true // It checks the type of functions very strictly. It comes with classes and interfaces
+        "strictBindCallApply": true // It checks the method parameters with bind(), call(), and apply() method.
+        "alwaysStrict": true        // Makes sure that all the compiled .js files uses ('use strict') mode.
+
+        /* Code Quality Parameters */
+        "noUsedLocals": true        // Reports errors on unused Locals
+        "noUsedParameteres": true   // Reports errors on unused parameters
+        "noImplicitReturns": true   // Reports errors when a function sometimes returns something and sometimes it doesn't return
     }
 }
 ```
