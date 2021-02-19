@@ -4,14 +4,17 @@ A repo in progress, soon available with all the basic guidance and contents to c
 
 ## Structure
 
--   app.ts (Temp TS which can be replaced by any TS file from directories)
 -   index.html (The HTML which loads app.js from script)
--   [data-types](/data-types/)
-    -   [Core-Datatypes](/data-types/core-datatypes.ts)
-    -   [Obj-Datatypes](/data-types/obj-arr-enum.ts)
-    -   [Function-Datatypes](/data-types/function-types.ts)
-    -   [Union-Literal-Datatypes](/data-types/union-literal-alias.ts)
-    -   [Unknown-Never-Datatypes](/data-types/unknown-never.ts)
+-   src (All `.ts` files)
+    -   app.ts (Temp TS which can be replaced by any TS file from directories)
+    -   [data-types](/data-types/)
+        -   [Core-Datatypes](/data-types/core-datatypes.ts)
+        -   [Obj-Datatypes](/data-types/obj-arr-enum.ts)
+        -   [Function-Datatypes](/data-types/function-types.ts)
+        -   [Union-Literal-Datatypes](/data-types/union-literal-alias.ts)
+        -   [Unknown-Never-Datatypes](/data-types/unknown-never.ts)
+-   dist (All compiled `.js` comes here)
+    -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
 
 ## Understanding Compilation
