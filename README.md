@@ -75,6 +75,22 @@ tsconfig.json
 
 which will only recompile app.ts and no other file. Exclude has been done in this project to make a smooth and easy project setup so, if you want to use the project by cloning or even by forking it in your organization for reference on basics, you can easily just code in `app.ts` and it will only create `app.js` which is already added in index.html < script > tag and you can go deeper in the directories for conceptual references.
 
+## compilerOptions
+
+Though by default the tsconfig.js has a very clean explanation of the compilerOptions commented out for developers but still, the below snippet has some important and common options explained;
+
+```
+tsconfig.js
+-----------
+
+{
+    "compilerOptions":{
+        "target": "es5" // Can be set to multiple versions of js like 'es6', 'es3', etc. The older the version, the more browser compatibility.
+
+    }
+}
+```
+
 ```
 const devQuote = 'Developers are never far from a new "Hello World!"';
 const quoteAuthor = "Prem Raval";
