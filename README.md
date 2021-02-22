@@ -15,6 +15,12 @@ A repo in progress, soon available with all the basic guidance and contents to c
         -   [Unknown-Never-Datatypes](/src/data-types/unknown-never.ts)
     -   [next-gen-js](/src/next-gen-js/)
         -   [let-const--arrow-functions--default-arguements--spread-operator--rest-parameters](/src/next-gen-js/new-features.ts)
+    -   [classes-objects](/src/classes-objects)
+        -   [class-basic](/src/classes-objects/class-basic.ts)
+        -   [inheritance](/src/classes-objects/inheritance.ts)
+        -   [overriding-getter-setter](/src/classes-objects/overriding-getter-setter.ts)
+        -   [static](/src/classes-objects/static.ts)
+        -   [abstract](/src/classes-objects/abstract.ts)
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
