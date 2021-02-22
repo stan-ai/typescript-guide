@@ -1,10 +1,12 @@
 // Method Overiding Getter Setter
 
-abstract class Department{
+class Department{
     private employees: string[] = [] 
-    constructor(protected readonly id: string, public name: string){} // protected to allow id to be used by inheriting classes
+    constructor(private readonly id: string, public name: string){}
 
-    abstract describe(this: Department): void; // abstract method declaration
+    describe(this: Department){
+        console.log(`Department(${this.id}): ` + this.name);
+    }
 
     addEmployee(employee: string){
         this.employees.push(employee);
@@ -30,18 +32,13 @@ class ITDepartment extends Department{
         if(employee == 'John') return
         super.addEmployee(employee);
     }
-
-
-    // Abstract method implementation
-    describe() {
-        console.log("IT Department: " + this.id);
-    }
 }
 
 const itDept = new ITDepartment('17', ['Prem']);
 itDept.addEmployee("John");
 itDept.addEmployee("Doe");
-itDept.describe();
+console.log(itDept);
+
 
 
 class AccDepartment extends Department{
@@ -71,11 +68,12 @@ class AccDepartment extends Department{
     printReports(this: AccDepartment){
         console.log(this.reports);
     }
-
-    describe(){
-        console.log("Accounting Department id: " + this.id);
-    }
 }
 
 const accDept = new AccDepartment('10', ['Report 1']);
-accDept.describe();
+console.log(accDept.recentReport);
+accDept.recentReport = "Report 2";
+console.log(accDept.recentReport);
+accDept.addReport("Report 3");
+console.log(accDept);
+accDept.printReports();

@@ -70,6 +70,7 @@
   "exclude": [
     "src/data-types",
     "src/next-gen-js",
+    "src/classes-objects",
     "./node_modules",
     "./using-ts.ts"
   ]
