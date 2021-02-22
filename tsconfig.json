@@ -69,6 +69,7 @@
   },
   "exclude": [
     "src/data-types",
+    "src/next-gen-js",
     "./node_modules",
     "./using-ts.ts"
   ]
