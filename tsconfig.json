@@ -71,6 +71,7 @@
     "src/data-types",
     "src/next-gen-js",
     "src/classes-objects",
+    "src/advanced-types",
     "./node_modules",
     "./using-ts.ts"
   ]
