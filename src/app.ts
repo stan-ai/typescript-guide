@@ -1,81 +1,55 @@
-// Method Overiding Getter Setter
+// Options with interface
 
-abstract class Department{
-    private employees: string[] = [] 
-    constructor(protected readonly id: string, public name: string){} // protected to allow id to be used by inheriting classes
+// Interface with functions
 
-    abstract describe(this: Department): void; // abstract method declaration
+interface addFn{
+    (a: number, b:number): number;
+}
 
-    addEmployee(employee: string){
-        this.employees.push(employee);
-    }
+let add: addFn;
 
-    printEmployeeInfo(){
-        console.log(this.employees.length);
-        console.log(this.employees);
-    }
+add = (n1: number, n2:number) => {
+    return n1 + n2;
+}
+
+console.log(add(2,3));
+
+
+
+
+interface Named {
+    readonly name: string; // readonly to fields which becomes readonly to all  the implemented classes
+    outputName?: string; // ? = optional, so the implemented classes might have might not have the property
+
+    // you can also mark methods as options like > myMethod?(){...}
+}
+
+interface Greetable {
+    greet(phrase: string): void;
 };
 
+/*
+interface Named{}
+interface Greetable extends Named{}
+Person implements Greetable{}
 
-// extends is used for inheritance
+is same as
 
-class ITDepartment extends Department{
-    constructor(id: string, public admins: string[]){
-        super(id, "I.T.");    
+Person implements Greetable, Named{}
+*/
+
+class Person implements Greetable, Named{
+
+    constructor(public name: string){}
+
+    greet(phrase: string): void {
+        console.log(phrase + " " + this.name);
     }
 
-    // Method overiding
-
-    addEmployee(employee: string){
-        if(employee == 'John') return
-        super.addEmployee(employee);
-    }
-
-
-    // Abstract method implementation
-    describe() {
-        console.log("IT Department: " + this.id);
-    }
 }
 
-const itDept = new ITDepartment('17', ['Prem']);
-itDept.addEmployee("John");
-itDept.addEmployee("Doe");
-itDept.describe();
+let user1: Greetable;
 
+user1 = new Person("Prem");
 
-class AccDepartment extends Department{
-    private lastReport: string;
-
-    // Getter of the value lastReport
-    get recentReport(){
-        if(this.lastReport){
-            return this.lastReport;
-        }
-        throw new Error("No Report Found");
-    }
-
-    set recentReport(value: string){
-        this.addReport(value);
-    }
-    constructor(id: string, private reports: string[]){
-        super(id, "Accounting.");
-        this.lastReport = reports[0];    
-    }
-
-    addReport(this: AccDepartment,report: string){
-        this.reports.push(report);
-        this.lastReport = report;
-    }
-
-    printReports(this: AccDepartment){
-        console.log(this.reports);
-    }
-
-    describe(){
-        console.log("Accounting Department id: " + this.id);
-    }
-}
-
-const accDept = new AccDepartment('10', ['Report 1']);
-accDept.describe();
+user1.greet("Good Morning!");
