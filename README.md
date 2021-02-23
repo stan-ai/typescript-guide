@@ -21,6 +21,9 @@ A repo in progress, soon available with all the basic guidance and contents to c
         -   [overriding-getter-setter](/src/classes-objects/overriding-getter-setter.ts)
         -   [static](/src/classes-objects/static.ts)
         -   [abstract](/src/classes-objects/abstract.ts)
+        -   [interface-basic](/src/classes-objects/interface-basic.ts)
+        -   [interface-class](/src/classes-objects/interface-class.ts)
+        -   [interface-options](/src/classes-objects/interface-options.ts)
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
