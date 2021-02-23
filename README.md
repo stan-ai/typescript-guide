@@ -24,6 +24,9 @@ A repo in progress, soon available with all the basic guidance and contents to c
         -   [interface-basic](/src/classes-objects/interface-basic.ts)
         -   [interface-class](/src/classes-objects/interface-class.ts)
         -   [interface-options](/src/classes-objects/interface-options.ts)
+    -   [advanced-types](/src/advanced-types)
+        -   [intersection--typeguards--typecasting--indexing](/src/advanced-types/advanced-types.ts)
+        -   [overloading--optional-chaining--nullish-coalescing](/src/advanced-types/advanced-types.ts)
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
