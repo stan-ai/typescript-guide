@@ -27,6 +27,11 @@ A repo in progress, soon available with all the basic guidance and contents to c
     -   [advanced-types](/src/advanced-types)
         -   [intersection--typeguards--typecasting--indexing](/src/advanced-types/advanced-types.ts)
         -   [overloading--optional-chaining--nullish-coalescing](/src/advanced-types/advanced-types.ts)
+    -   [generics](/src/generics)
+        -   [inbuilt-generics](/src/generics/inbuilt-generics.ts)
+        -   [custom-generics](/src/generics/custom-generics.ts)
+        -   [constraints](/src/generics/constraints.ts)
+        -   [functional-constraints](/src/generics/functional-constraints.ts)
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
