@@ -44,6 +44,9 @@ A repo in progress, soon available with all the basic guidance and contents to c
         -   [decorator-return](/src/decorators/decorator-return.ts)
         -   [decorator-autobind](/src/decorators/decorator-autobind.ts)
         -   [decorator-validation](/src/decorators/decorator-validation.ts)
+    -   [sample-halfway-project](/src/sample-project)
+        -   This is a sample Drag and Drop project which makes use of all the topics above i.e. Types, Interfaces, OOPS, Inheritence,
+            Generics, Decorators, Next-Gen-Js, etc. View the code for project [here](/src/sample-project/app.ts)
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
