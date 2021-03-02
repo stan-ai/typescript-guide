@@ -74,6 +74,7 @@
     "src/advanced-types",
     "src/generics",
     "src/decorators",
+    "src/sample-project",
     "./node_modules",
     "./using-ts.ts"
   ]
