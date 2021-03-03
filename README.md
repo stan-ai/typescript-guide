@@ -47,6 +47,15 @@ A repo in progress, soon available with all the basic guidance and contents to c
     -   [sample-halfway-project](/src/sample-project)
         -   This is a sample Drag and Drop project which makes use of all the topics above i.e. Types, Interfaces, OOPS, Inheritence,
             Generics, Decorators, Next-Gen-Js, etc. View the code for project [here](/src/sample-project/app.ts)
+    -   [organizing](/src/organizing)
+        -   [namespace-manner](/src/organizing/namespace-manner)
+            -   This is one way to organize long code in seperate sections. To apply this follow the following steps.
+                1. In `tsconfig.json`, uncomment outfile option and then add this `"outfile": "./dist/bundle.js"`.
+                2. In `tsconfig.json`, change module from commonJS to amd: `"module" : "AMD"`.
+                3. Replace the base index.html and add the app.css from this folder to root folder.
+                4. Bring all the folders in the root section.
+                5. Also you might need to change the directory called 'decorators' name as it might clash the base decorators directory or
+                   you can temporarily delete the decorators directory and then can bring back by pulling again.
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
