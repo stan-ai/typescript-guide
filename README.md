@@ -56,6 +56,8 @@ A repo in progress, soon available with all the basic guidance and contents to c
                 4. Bring all the folders in the root section.
                 5. Also you might need to change the directory called 'decorators' name as it might clash the base decorators directory or
                    you can temporarily delete the decorators directory and then can bring back by pulling again.
+        -   [module-manner](/src/organizing/module0manner)
+            -   This is another way to organize long code in seperate sections. To apply this, just remove the steps you made for namespace manner and bring all the folders in the root section.
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
