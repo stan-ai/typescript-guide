@@ -58,6 +58,15 @@ A repo in progress, soon available with all the basic guidance and contents to c
                    you can temporarily delete the decorators directory and then can bring back by pulling again.
         -   [modules-manner](/src/organizing/modules-manner)
             -   This is another way to organize long code in seperate sections. To apply this, just remove the steps you made for namespace manner and bring all the folders in the root section.
+    -   [webpack-project](/src/webpack-project)
+        -   Till now we use to run our server and tsc watch compiler manually and in the modules-approach it used to create multiple file, but that's not very optimized for a server production version. We need something where we can code clearly in different modules but then the prod shipped code should be optimized at its maximum and bundled in a same file. Webpack does tht excactly. The steps are as follows
+            1. `npm install webpack webpack-cli webpack-dev-server typescript ts-loader`
+            2. Take the whole folder to root
+            3. Remove all `.js` text from imports i.e. `import { ProjectInput } from "./components/project-input.js";` to `import { ProjectInput } from "./components/project-input";`
+            4. Cretate a `webpack.config.js` file in the root folder
+            5. Remove `rootDir` from tsconfig.json.
+            6. Add a script in npm scripts as `"start:dev": "webpack serve"`
+            7. For exeuting the project run `npm run start:dev`
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)

@@ -5,11 +5,19 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start:dev": "webpack && webpack serve",
+    "build": "webpack --config webpack.config.prod.js",
+    "webpack": "webpack"
   },
   "author": "Prem Raval",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "clean-webpack-plugin": "^3.0.0",
+    "lite-server": "^2.6.1",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4",
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
   }
 }
