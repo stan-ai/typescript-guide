@@ -67,6 +67,10 @@ A repo in progress, soon available with all the basic guidance and contents to c
             5. Remove `rootDir` from tsconfig.json.
             6. Add a script in npm scripts as `"start:dev": "webpack serve"`
             7. For exeuting the project run `npm run start:dev`
+    -   [third-party-libs](/src/third-party-libs)
+        -   [how-to-integrate-third-party-libs](/src/third-party-libs/third-party.ts)
+        -   [class-transformer-eg](/src/third-party-libs/third-party.ts)
+        -   [class-validator-eg](/src/third-party-libs/product.model.ts)
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)

@@ -12,6 +12,7 @@
   "author": "Prem Raval",
   "license": "ISC",
   "devDependencies": {
+    "@types/lodash": "^4.14.168",
     "clean-webpack-plugin": "^3.0.0",
     "lite-server": "^2.6.1",
     "ts-loader": "^8.1.0",
@@ -19,5 +20,13 @@
     "webpack": "^5.31.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "class-transformer": "^0.4.0",
+    "class-validator": "^0.13.1",
+    "es6-shim": "^0.35.6",
+    "install": "^0.13.0",
+    "lodash": "^4.17.21",
+    "reflect-metadata": "^0.1.13"
   }
 }
