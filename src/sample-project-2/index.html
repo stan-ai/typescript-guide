@@ -17,9 +17,22 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Understanding TypeScript</title>
+        <title>Google Maps</title>
+        <script
+            async
+            defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"
+        ></script>
         <link rel="stylesheet" href="app.css" />
         <script type="module" src="dist/bundle.js"></script>
     </head>
-    <body></body>
+    <body>
+        <div id="map">
+            <p>Please enter an address</p>
+        </div>
+        <form>
+            <input type="text" id="address" />
+            <button type="submit">Seatch Address</button>
+        </form>
+    </body>
 </html>
