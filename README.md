@@ -71,6 +71,14 @@ A repo in progress, soon available with all the basic guidance and contents to c
         -   [how-to-integrate-third-party-libs](/src/third-party-libs/third-party.ts)
         -   [class-transformer-eg](/src/third-party-libs/third-party.ts)
         -   [class-validator-eg](/src/third-party-libs/product.model.ts)
+    -   [sample-project-2](/src/sample-project-2)
+        -   This is a sample Google Maps project, which uses third party libraries in both the concepts, described above. Used axios, which already had TypeScript support added to package and used Google Maps with CDN approach as it doesn't have native TypeScript support but used [@types/googlemaps](https://www.npmjs.com/package/@types/googlemaps) to add the TypeScript support. Some Steps to run this project successfully.
+            1. Create a project in Google Cloud platform.
+            2. Enable Javascript Map API and Geocoding API for that project.
+            3. Create API Key.
+            4. Copy the files from the folder to base/root.
+            5. Replace "YOUR_API_KEY" to "A...." api key from Google in index.html and app.ts
+            6. Run the code
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
