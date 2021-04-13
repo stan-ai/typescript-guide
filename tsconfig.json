@@ -79,6 +79,7 @@
     "src/sample-project",
     "src/organizing",
     "src/webpack-project",
+    "src/sample-project-2",
     "src/third-party-libs",
     "./node_modules",
     "./using-ts.ts"
