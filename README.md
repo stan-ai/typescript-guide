@@ -80,6 +80,7 @@ A repo in progress, soon available with all the basic guidance and contents to c
             5. Replace "YOUR_API_KEY" to "A...." api key from Google in index.html and app.ts
             6. Run the code
     -   [typescript-react](https://github.com/premraval-pr/typescript-react): This is just a sample Todo App created in TypeScript with React, its another repo on my profile and can be accessed using the link on the point heading or by clicking [here](https://github.com/premraval-pr/typescript-react). Feel free to clone or contribute your changes if you are practicing.
+    -   [typescript-express](https://github.com/premraval-pr/typescript-express): This is just a sample Todo REST API created in TypeScript with Express, its another repo on my profile and can be accessed using the link on the point heading or by clicking [here](https://github.com/premraval-pr/typescript-express). Feel free to clone or contribute your changes if you are practicing.
 -   dist (All compiled `.js` comes here)
     -   Though this directory looks empty, it is becasue all js files are ignored in the .gitignore file, but if you fork/clone the repo and execute it. all the js files will go to this folder.
 -   using-ts.ts (Sample TS)
